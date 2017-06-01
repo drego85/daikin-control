@@ -1,3 +1,7 @@
+<?php
+    include "index.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,11 +60,11 @@
 	   			<!-- Mode -->
 					<h4>Mode</h4>
 					<div class="btn-group">
-						<a class="btn btn-default mode-btn" id="mode_cooling" onclick='mode_onclick("3");'><i class="fa fa-asterisk fa-2x"></i></a>
-						<a class="btn btn-default mode-btn" id="mode_dehum" 	onclick='mode_onclick("2");'><i class="fa fa-tint fa-2x"></i></a>
-						<a class="btn btn-default mode-btn" id="mode_heating" onclick='mode_onclick("4");'><i class="fa fa-sun-o fa-2x"></i></a>
-						<a class="btn btn-default mode-btn" id="mode_fan" 		onclick='mode_onclick("6");'><i class="fa fa-retweet fa-2x"></i></a>
-						<a class="btn btn-default mode-btn" id="mode_auto" 	onclick='mode_onclick("1");'><i class="fa fa-font fa-2x"></i></a>
+						<a class="btn btn-default mode-btn" id="mode_cooling" title="Cooling" onclick='mode_onclick("3");'><i class="fa fa-asterisk fa-2x"></i></a>
+						<a class="btn btn-default mode-btn" id="mode_dehum" title="Dehumidifier"	onclick='mode_onclick("2");'><i class="fa fa-tint fa-2x"></i></a>
+						<a class="btn btn-default mode-btn" id="mode_heating" title="Heating" onclick='mode_onclick("4");'><i class="fa fa-sun-o fa-2x"></i></a>
+						<a class="btn btn-default mode-btn" id="mode_fan" 	title="Fan"	onclick='mode_onclick("6");'><i class="fa fa-retweet fa-2x"></i></a>
+						<a class="btn btn-default mode-btn" id="mode_auto" 	title="Auto" onclick='mode_onclick("1");'><i class="fa fa-font fa-2x"></i></a>
 					</div>
 					
 		  		</div>
@@ -69,8 +73,8 @@
 		  			<!-- Fan -->
 					<h4>Fan</h4>
 					<div class="btn-group">
-						<a class="btn btn-default fan-btn" id="fan_auto" 	onclick='fan_onclick("A");'><i class="fa fa-font fa-2x"></i></a>
-						<a class="btn btn-default fan-btn" id="fan_eco" 	onclick='fan_onclick("B");'><i class="fa fa-leaf fa-2x"></i></a>
+						<a class="btn btn-default fan-btn" id="fan_auto" title="Auto"	onclick='fan_onclick("A");'><i class="fa fa-font fa-2x"></i></a>
+						<a class="btn btn-default fan-btn" id="fan_eco" title="Eco"	onclick='fan_onclick("B");'><i class="fa fa-leaf fa-2x"></i></a>
 						<a class="btn btn-default" onclick='fan_onclick("3");'><img src="media/level_1_off.svg" height="29px" id="fan_lvl_1"></a>
 						<a class="btn btn-default" onclick='fan_onclick("4");'><img src="media/level_2_off.svg" height="29px" id="fan_lvl_2"></a>
 						<a class="btn btn-default" onclick='fan_onclick("5");'><img src="media/level_3_off.svg" height="29px" id="fan_lvl_3"></a>
